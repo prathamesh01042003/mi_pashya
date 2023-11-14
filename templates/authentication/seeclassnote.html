@@ -1,0 +1,89 @@
+
+
+
+
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/seeclassnote.css">
+  </head>
+  <body>
+  
+  
+         <!-- HTML !-->
+ <a href="/view">
+  <button class="button-92" role="button">CHECH SYLLABUS</button>
+   </a>
+  
+    <div class="table-users">
+
+      <div class="header">STUDENT_____UPLOADED_____CLASSNOTEBOOKS</div>
+      
+      <table cellspacing="0"class="header20">
+         <tr>
+          <th >S/N</th>
+          <th>status</th>
+          <th>Upload date</th>
+          <th>Full Name</th>
+          <th width="230">File Desc</th>
+          <th>file name</th>
+          <th width="230">See file</th>
+          
+          <th>download it</th>
+          
+         </tr>
+   
+         {% for a in data2 %}
+  
+         <tr>
+          <td></td>
+            <td class="header2 header20" >｡ ☆★
+             ━❣━━ ⊱⁜ {{forloop.counter}}  ⁜⊰━❣━★☆ ｡</td>
+  
+            <td class="header4">{{a.status}}</td>
+  
+            <td class="header3">{{a.date_field}}</td>
+  
+            <td class="header4">{{a.full_name}}</td>
+
+            <td class="header4">
+            <textarea rows="3 " cols="50" >{{a.file_desc}} </textarea>
+  
+           </td>
+  
+            <td class="header4">{{a.file_name}}</td>
+  
+            <td>
+            
+              <a class="header1" href="{{a.myfiles.url}}">{{a.myfiles}}</a>
+  
+  
+            </td>
+            
+            
+            <td><a  class="header1" Download href="{{f.myfiles.url}}"> DOWNLOAD </a></td>
+         </tr>
+   
+         {%endfor%}
+        
+  </body>
+  </html>
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

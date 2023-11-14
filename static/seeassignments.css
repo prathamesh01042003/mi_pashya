@@ -1,0 +1,471 @@
+/* body {
+    background-image: url("/static/libraryforassign.jpg");
+}
+body * {
+    box-sizing: border-box;
+}
+.header {
+    background-color: #327a81;
+    color: white;
+    font-size: 1.5em;
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.header1 {
+    
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 0.2rem;
+    
+    color: blue;
+    text-transform: uppercase;
+}
+.header1:hover {
+    
+    text-decoration: none;
+    font-size: 1.3em;
+    padding: 0.2rem;
+    
+    
+    text-transform: uppercase;
+}
+
+.header2 {
+    
+   
+    font-size: 1.3em;
+    padding: 0.2rem;
+   
+    color: black;
+    width: 10px;
+    
+    text-transform: uppercase;
+}
+
+.header3 {
+    
+   
+    font-size: 1em;
+    padding: 0.2rem;
+    color: black;
+    
+    text-transform: uppercase;
+}
+
+.header4 {
+    
+   
+    font-size: 1em;
+    padding: 0.2rem;
+    color: black;
+    
+    text-transform: uppercase;
+}
+img {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+}
+.table-users {
+    border: 1px solid #13b641;
+    border-radius: 15px;
+    box-shadow: 3px 3px 0 rgba(186, 14, 14, 0.1);
+    max-width: calc(100% - 2em);
+    margin: 1em auto;
+    overflow: hidden;
+    width: auto;
+}
+tr {
+    width: 100%;
+    border: 2px solid rgb(0, 255, 208);
+    
+}
+table td, table th {
+    color: #2b686e;
+    padding: 50%;
+}
+table td {
+    text-align: center;
+    vertical-align: middle;
+}
+table td:last-child {
+    font-size: 0.95em;
+    line-height: 1.4;
+    text-align: left;
+}
+table th {
+    background-color: #daeff1;
+    font-weight: 300;
+    
+}
+table tr:nth-child(2n) {
+    background-color: white;
+    width: 100%;
+    
+}
+table tr:nth-child(2n+1) {
+    background-color: #edf7f8;
+    width: 100%;
+}
+@media screen and (max-width: 1920px) {
+    table, tr, td {
+        display: block;
+   }
+    td:first-child {
+        position: absolute;
+        top: 50%;
+        
+        transform: translateY(-50%);
+        width: 100px;
+   }
+    td:not(:first-child) {
+        clear: both;
+        margin-left: 100px;
+        padding: 4px 20px 4px 90px;
+        position: relative;
+        text-align: left;
+   }
+   td:defined {
+    clear: both;
+    margin-left: 100px;
+    padding: 4px 20px 4px 90px;
+    position: relative;
+    text-align: left;
+}
+    td:not(:first-child):before {
+        color: #09a5b3;
+        content: '';
+        display: block;
+        left: -50;
+        position: absolute;
+        text-transform: uppercase;
+   }
+    td:nth-child(2):before {
+        content: 'S/N:';
+   }
+    td:nth-child(3):before {
+        content: 'UPLOADED TO :';
+   }
+    td:nth-child(4):before {
+        content: 'UPLOAD DATE:';
+   }
+    td:nth-child(5):before {
+        content: 'FULL NAME:';
+   }
+
+   td:nth-child(6):before {
+    content: 'FILE DESC:';
+}
+td:nth-child(7):before {
+    content: 'FILE NAME:';
+}
+
+
+   td:nth-child(8):before {
+    content: 'SEE FILE';
+}
+
+td:nth-child(9):before {
+    content: 'DOWNLOAD:';
+}
+    
+   tr {
+        padding: 10px 0;
+        position: relative;
+   }
+    tr:first-child {
+        display: none;
+   }
+   tr:first-child {
+        display: none;
+   }
+} 
+
+
+
+
+.button-92 {
+    --c: #fff;
+    
+    background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%) var(--_p,100%)/300% no-repeat,
+      #004dff;
+    
+    color: #0000;
+    border: none;
+    transform: perspective(500px) rotateY(calc(20deg*var(--_i,-1)));
+    text-shadow: calc(var(--_i,-1)* 0.08em) -.01em 0   var(--c),
+      calc(var(--_i,-1)*-0.08em)  .01em 2px #0004;
+    outline-offset: .1em;
+    transition: 0.3s;
+  }
+  
+  .button-92:hover,
+  .button-92:focus-visible {
+    --_p: 0%;
+    --_i: 1;
+  }
+  
+  .button-92:active {
+    text-shadow: none;
+    color: var(--c);
+    box-shadow: inset 0 0 9e9q #0005;
+    transition: 0s;
+  }
+  
+  .button-92 {
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 0;
+    cursor: pointer;
+    padding: .1em .3em;
+  }*/
+
+
+
+  body {
+    background-image: url("/static/libraryforassign.jpg");
+}
+body * {
+    box-sizing: border-box;
+}
+.header {
+    background-color: #327a81;
+    color: white;
+    font-size: 1.5em;
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.header20 {
+    background-color:white;
+    color: white;
+    font-size: 1em;
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.header1 {
+    
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 0.2rem;
+    
+    color: blue;
+    text-transform: uppercase;
+}
+.header1:hover {
+    
+    text-decoration: none;
+    font-size: 1.3em;
+    padding: 0.2rem;
+    
+    
+    text-transform: uppercase;
+}
+
+.header2 {
+    
+   
+    font-size: 1.3em;
+    padding: 0.2rem;
+   
+    color: black;
+    border: 1px solid #13b641;
+    border-radius: 15px;
+    box-shadow: 3px 3px 0 rgba(186, 14, 14, 0.1);
+    max-width: calc(100% - 8em);
+    margin: 1em auto;
+    overflow: hidden;
+    width: auto;
+    
+    text-transform: uppercase;
+}
+
+.header3 {
+    
+   
+    font-size: 1em;
+    padding: 0.2rem;
+    color: black;
+    
+    text-transform: uppercase;
+}
+
+.header4 {
+    
+   
+    font-size: 1em;
+    padding: 0.2rem;
+    color: black;
+    
+    text-transform: uppercase;
+}
+img {
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+}
+.table-users {
+    border: 1px solid #13b641;
+    border-radius: 15px;
+    box-shadow: 3px 3px 0 rgba(186, 14, 14, 0.1);
+    max-width: calc(100% - 2em);
+    margin: 1em auto;
+    overflow: hidden;
+    width: auto;
+}
+tr {
+    position: relative;
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem;
+    border: 2px solid rgb(0, 255, 208);
+    
+}
+table td, table th {
+    color: #2b686e;
+    padding: 50%;
+}
+table td {
+    text-align: center;
+    vertical-align: middle;
+}
+table td:last-child {
+    font-size: 0.95em;
+    line-height: 1.4;
+    text-align: left;
+}
+table th {
+    background-color: #daeff1;
+    font-weight: 300;
+    
+}
+table tr:nth-child(2n) {
+    background-color: white;
+    width: 100%;
+    
+}
+table tr:nth-child(2n+1) {
+    background-color: #edf7f8;
+    width: 100%;
+}
+@media screen and (max-width: 2100px) {
+    table, tr, td {
+        display: block;
+        padding: 1rem;
+   }
+    td:first-child {
+        position: absolute;
+        top: 50%;
+        
+        transform: translateY(-50%);
+        width: 100px;
+   }
+    td:not(:first-child) {
+        clear: both;
+        margin-left: 100px;
+        padding: 4px 20px 4px 90px;
+        position: relative;
+        text-align: left;
+   }
+   td:defined {
+    clear: both;
+    margin-left: 100px;
+    padding: 4px 20px 4px 90px;
+    position: relative;
+    text-align: left;
+}
+    td:not(:first-child):before {
+        color: #09a5b3;
+        
+        content: '';
+        display: block;
+        left: -50;
+        position: absolute;
+        text-transform: uppercase;
+   }
+    td:nth-child(2):before {
+        content: 'S/N:';
+   }
+    td:nth-child(3):before {
+        content: 'UPLOADED TO :';
+   }
+    td:nth-child(4):before {
+        content: 'UPLOAD DATE:';
+   }
+    td:nth-child(5):before {
+        content: 'FULL NAME:';
+   }
+
+   td:nth-child(6):before {
+    content: 'FILE DESC:';
+}
+td:nth-child(7):before {
+    content: 'FILE NAME:';
+}
+
+
+   td:nth-child(8):before {
+    content: 'SEE FILE';
+}
+
+td:nth-child(9):before {
+    content: 'DOWNLOAD:';
+}
+    
+   tr {
+        padding: 10px 0;
+        position: relative;
+   }
+    tr:first-child {
+        display: none;
+   }
+   tr:first-child {
+        display: none;
+   }
+}
+
+
+
+
+/* CSS */
+.button-92 {
+    --c: #fff;
+    /* text color */
+    background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%) var(--_p,100%)/300% no-repeat,
+      #004dff;
+    /* background color */
+    color: #0000;
+    border: none;
+    transform: perspective(500px) rotateY(calc(20deg*var(--_i,-1)));
+    text-shadow: calc(var(--_i,-1)* 0.08em) -.01em 0   var(--c),
+      calc(var(--_i,-1)*-0.08em)  .01em 2px #0004;
+    outline-offset: .1em;
+    transition: 0.3s;
+  }
+  
+  .button-92:hover,
+  .button-92:focus-visible {
+    --_p: 0%;
+    --_i: 1;
+  }
+  
+  .button-92:active {
+    text-shadow: none;
+    color: var(--c);
+    box-shadow: inset 0 0 9e9q #0005;
+    transition: 0s;
+  }
+  
+  .button-92 {
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 0;
+    cursor: pointer;
+    padding: .1em .3em;
+  }

@@ -1,0 +1,189 @@
+{% comment %} 
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+     
+   {% for message in messages %}
+   <div class="alert alert-{{message.tag}}alert-dismissible fade show" role="alert">
+   <strong>Message</strong>{{message}}
+   <button type="button" class="close" aria-label="Close">
+   <span aria-hidden="true">&times;</span>
+   </button>
+   </div>
+   {% endfor %} 
+
+
+    <h3>Sign Up
+    </h3>
+
+    <form action="/signup" method="post">
+        {% csrf_token %}
+        <label for="">Username</label>
+        <input type="text" id="username" name="username" placeholder="create a username(only letters and numbers)" Required>
+        <br>
+
+
+        <label for="">First Name</label>
+        <input type="text" id="fname" name="fname" placeholder="create a username first name" Required>
+        <br>
+
+        <label for="">Last Name</label>
+        <input type="text" id="lname" name="lname" placeholder="create a username last name" Required>
+        <br>
+
+        <label for="">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="create a username email" Required>
+        <br>
+        <label for="">Passwords</label>
+        <input type="passwords" id="pass1" name="pass1" placeholder="enter your password" Required>
+        <br>
+
+        <label for="">Confirm your passwords</label>
+        <input type="passwords" id="pass2" name="pass2" placeholder="confirm your passwords" Required> 
+        <br>
+
+        <button type="submint">Sign Up</button>
+        
+    </form>
+    
+ </body>
+ </html>
+
+
+ {% endcomment %}
+
+
+
+
+
+
+
+
+ <!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title> Responsive Login Form | CodingLab </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="/static/signup.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+
+
+   {% for message in messages %}
+   <div class="alert alert-{{message.tag}}alert-dismissible fade show" role="alert">
+   <strong>Message</strong>{{message}}
+   <button type="button" class="close" aria-label="Close">
+   <span aria-hidden="true">&times;</span>
+   </button>
+   </div>
+   {% endfor %} 
+
+
+
+
+
+
+
+
+
+    <div class="container position-absolute bottom-0 start-0  ">
+       <form action="/signup" method="post">
+         {% csrf_token %} 
+
+
+
+         <div class="title">Signup</div>
+
+         <div class="input-box underline">
+           <input type="text" id="username"name="username" placeholder="Enter your username" required>
+           <div class="underline"></div>
+         </div>
+
+
+        
+        <div class="input-box underline">
+          <input type="text" id='fname' name='fname'placeholder="Enter Your First Name" required>
+          <div class="underline"></div>
+        </div>
+
+        <div class="input-box underline">
+         <input type="text" id="lname" name="lname" placeholder="Enter Your Last Name" required>
+         <div class="underline"></div>
+       </div>
+
+
+        <div class="input-box">
+          <input type="text" id="email" name="email" placeholder="Enter Your Email Address" required>
+          <div class="underline"></div>
+        </div>
+
+
+        <div class="input-box">
+         <input type="password" id="pass1" name="pass1" placeholder="Enter Your Passwords" required>
+         <div class="underline"></div>
+       </div>
+
+       <div class="input-box">
+         <input type="password" id="pass2" name="pass2" placeholder="Enter Your Confirm Passwords" required>
+         <div class="underline"></div>
+       </div>
+
+        
+        <div class="input-box button" href="/">
+          <input type="submit" name="" value="Signin">
+        </div>
+       
+
+
+
+        <div class="btn btn-outline position-absolute bottom-0 end-0">
+          <a class="signin1" href="/signin"  class=" position-relative bottom-0 start-100">signin for notes </a>
+     
+         </div>
+        
+      </form>
+
+
+     
+     
+      
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+        {% comment %} <div class="option">or Connect With Social Media</div>
+        <div class="twitter">
+          <a href="#"><i class="fab fa-twitter"></i>Sign in With Twitter</a>
+        </div>
+        <div class="facebook">
+          <a href="#"><i class="fab fa-facebook-f"></i>Sign in With Facebook</a>
+        </div> {% endcomment %}
+
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+{% comment %}  
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+</head>
+<body border="5" cellpadding="10">
+
+    <h2>HERE IS THIRD YEAR CLASSE NOTEBOOK </h2>
+ 
+        <table border="5" cellpadding="10">
+            <thead border="5" cellpadding="10">
+              <tr >
+                
+                <th >S/N</th>
+                <th>Name</th>
+                <th>file link</th>
+                <th>Download file</th>
+              </tr>
+            </thead>
+            <tbody>
+
+             {% for d in data %}
+           
+
+             <tr>
+                
+                <th>{{forloop.counter}}</th>
+                <th>{{d.file_name}}</th>
+                <th><a href="{{d.my_file.url}}">{{d.my_file}}</a></th>
+                <th><a Download href="{{d.my_file.url}}">DOWNLOAD</a></th>
+               
+              </tr>
+             
+             
+             {%endfor%}
+
+             
+            </tbody>
+          </table> 
+        
+
+          
+
+   
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html> {% endcomment %}
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<style>
+  table, th, td {
+    
+    border: 4px outset white;
+    border-collapse: collapse;
+  }
+  th, td {
+    width:50%;
+    background-color: #96D4D4;
+  }
+</style>
+<body class="bg-dark">
+
+  <h2 class="text-info">HERE IS THIRD YEAR 1<sup>st</sup> ALL SYLLABUS </h2>
+
+<table style="width:80% ,">
+  <tr >
+                
+    <th >S/N</th>
+    <th>Desc</th>
+    <th>file link</th>
+    <th>Download file</th>
+  
+  </tr>
+  {% for d in data %}
+           
+
+             <tr>
+                
+                <th>{{forloop.counter}}</th>
+
+
+                <th>{{d.file_name}}</th>
+                <th><a href="{{d.my_file.url}}">{{d.my_file}}</a></th>
+                
+                <th><a Download href="{{d.my_file.url}}">DOWNLOAD</a></th>
+                 
+            </tr>
+                        
+                        
+                        {%endfor%}
+</table>
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+

@@ -1,0 +1,409 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+html, body{
+  display: grid;
+  height: 100vh;
+  width: 100%;
+  place-items: center;
+  border-radius: 25px;
+  background:url("/static/img.jpg");
+  background-repeat: no-repeat;
+ 
+  background-size: cover;
+  
+}
+::selection{
+  background: hsl(0, 33%, 99%);
+
+}
+.container{
+  
+    background-image: url("/static/dark.jpg");
+    
+ 
+  background-size: cover;
+  background-position: center;
+  max-width: 350px;
+  width: 100%;
+
+ 
+  padding: 25px 30px;
+  border-radius: 25px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+}
+.container form .title{
+   
+  font-size: 30px;
+  font-weight: 600;
+  margin: 20px 0 10px 0;
+  position: relative;
+  background: #f7f7f8;
+  text-align: center;
+}
+.container form .title:before{
+  content: '';
+position: absolute;
+  height: 2px;
+  width: 100px;
+  left: 100px;
+  bottom: 4px;
+  border-radius: 5px;
+  background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+
+}
+.container form .input-box{
+    
+  width: 100%;
+  height: 45px;
+  margin-top: 25px;
+  position: relative;
+  
+}
+.container form .input-box input{
+  
+
+   background: transparent;
+    color: #ead8d8;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  color: #fff;
+  font-size: 22px;
+  font-size:larger;
+  color: rgb(234, 232, 237);
+  border: none;
+ 
+  color: #f7f7f8;
+  font-family: cursive ;
+  color: #da0c4d;
+}
+
+.container form .underline::before{
+    color: #fff;
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: #ccc;
+  left: 0;
+  bottom: 0;
+}
+.container form .underline::after{
+    
+  content: '';
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+  left: 0;
+  bottom: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.3s ease;
+ 
+}
+.container form .input-box input:focus ~ .underline::after,
+.container form .input-box input:valid ~ .underline::after{
+  transform: scaleX(1);
+  transform-origin: left;
+}
+.container form .button{
+  margin: 40px 0 20px 0;
+}
+.container .input-box input[type="submit"]{
+  background: linear-gradient(to right, #99004d 0%, #ff0080 100%);
+  font-size: 17px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.container .input-box input[type="submit"]:hover{
+  letter-spacing: 1px;
+  background: linear-gradient(to left, #99004d 0%, #da4a0c 100%);
+}
+.container .option{
+  font-size: 14px;
+  text-align: center;
+}
+.container .facebook a,
+.container .twitter a{
+  display: block;
+  height: 45px;
+  width: 100%;
+  font-size: 15px;
+  text-decoration: none;
+  padding-left: 20px;
+  line-height: 45px;
+  color: #fff;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  font-family: cursive;
+}
+
+.container .facebook i,
+.container .twitter i{
+  padding-right: 12px;
+  font-size: 20px;
+}
+.container .twitter a{
+  background: linear-gradient(to right,  #00acee 0%, #1abeff 100%);
+  margin: 20px 0 15px 0;
+}
+.container .twitter a:hover{
+  background: linear-gradient(to left,  #00acee 0%, #1abeff 100%);
+  margin: 20px 0 15px 0;
+}
+.container .facebook a{
+  background: linear-gradient( to right,  #3b5998 0%, #476bb8 100%);
+  margin: 20px 0 50px 0;
+}
+.container .facebook a:hover{
+  background: linear-gradient( to left,  #3b5998 0%, #6282c9 100%);
+  margin: 20px 0 50px 0;
+}
+
+
+
+ */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* all navbar fonts */
+
+a2{
+  font-family: 'Courier New';
+  text-transform: uppercase;
+}
+
+
+
+
+/* navbar container */
+.container-sm{
+  position: relative;
+  left: 0%;
+  bottom: 0%;
+
+}
+
+
+/* swiches for only */
+        /* css dark mode */
+        body {
+          padding: 25px;
+          background-color: black;
+          color:white;
+          font-size: 25px;
+        }
+        
+        .dark-mode {
+          background-color: white;
+          color: black;
+        }
+        
+
+
+.navbar-expand-lg{
+  color:#ff7200
+}
+
+
+/* .start-51{
+  text-decoration: none;
+color: rgb(34, 7, 121);
+font-family: Georgia, serif;
+position: relative;
+left: 20%;
+} */
+
+
+
+
+
+.start-50{
+    /* text-decoration: none;
+  color: rgb(5, 171, 88);
+  font-family: Georgia, serif;
+  position: relative;
+  left: 30%; */
+
+  
+         
+          color:rgb(8, 2, 2);
+          font-size: 25px;
+          color: rgb(5, 171, 88);
+  
+  }
+  .dark-mode .start-50{
+    background-color: white;
+    color: black;
+  }
+
+.thstart-50{
+  text-decoration: none;
+  color: rgb(10, 26, 202);
+  font-family: Georgia, serif;
+  position: relative;
+  left: 20%;
+}
+.text-success{
+  text-decoration: none;
+  position: relative;
+  left: 20%;
+}
+
+
+/* my name color */
+.th{
+  color: rgb(60, 5, 224);
+}
+
+.th2.dark-mode{
+  background-color: white;
+  color: black;
+}
+
+
+
+/* all forms */
+.form{
+    background-image: url("/static/143.jpg");
+    background-size: cover;
+  background-position: center;
+    width:270px;
+    height:500px;
+    position: relative;
+    /* left: -10%; */
+  right:-100%;
+  /* bottom: 3%; */
+  top: 30%;
+    /* top:-20px;
+    left:80px; */
+    border-radius: 10px; 
+       padding: 35px;
+  
+  }
+
+
+  .form h2{
+    border: #0a0908;
+    width: 220px;
+    font-family: georgia,serif;
+    text-align: center;
+    color:hsl(0, 0%, 99%);
+    font-size: 22px;
+    background-color: #060606;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+  
+   
+  }
+
+
+
+  .form input{
+    width:220px;
+    height: 50px;
+    background: transparent;
+    border-bottom: 1px solid #ff7200;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color:white ;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    background: transparent;
+    font-family: sans-serif;
+  }
+  .form input:focus{
+    background: transparent;
+    outline: none ;
+  } 
+  
+  .form input:focus{
+    outline: none;
+  } 
+
+
+  ::placeholder{
+    background: transparent;
+    color:hsl(0, 9%, 98%);
+    font-family: arial;
+  } 
+ 
+
+  .btn-outline-info{
+    width: 240px;
+    height: 50px;
+    margin-top: 45px;
+    font-size: 18px;
+    position: absolute;
+    bottom:20%;
+    right: 3%;   
+    }
+    
+
+
+
+   
+    body{
+    
+      /* background-position: cover; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      display: -webkit-flex;
+      -webkit-align-items: center;
+      -webkit-justify-content: center;
+      flex-direction: column;
+      -webkit-flex-direction: column;
+    
+    }
+    
+   
+ 
+
+
+
+
+/* bottom memu */
+.menu{
+  position: absolute;
+  left: 10%;
+  top: 100%;
+
+  font-size: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  transition:0.2s ease-in-out
+}
+ul li a:hover{
+  transition:0.2s ease-in-out;
+  color: #00ff3c;
+}
+
+
+
+
+
+
+

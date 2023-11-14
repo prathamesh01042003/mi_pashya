@@ -1,0 +1,239 @@
+
+
+
+
+/* all navbar fonts */
+
+a2{
+    font-family: 'Courier New';
+    text-transform: uppercase;
+  }
+  
+  
+  
+  
+  /* navbar container */
+  .container-{
+    position: relative;
+    border-right: none;
+    left: 0%;
+    bottom: 0%;
+  
+  }
+  
+  
+  /* swiches for only */
+          /* css dark mode */
+          body {
+            padding: 25px;
+            background-color: white;
+            color:black;
+            font-size: 25px;
+          }
+          
+          .dark-mode {
+            background-color: black;
+            color: white;
+          }
+          
+  
+  
+  .navbar-expand-lg{
+    
+    color:#ff7200
+  }
+  
+  
+ 
+  
+  
+  .start-50{
+  
+           
+            color:rgb(8, 2, 2);
+            font-size: 25px;
+            color: rgb(5, 171, 88);
+    
+    }
+    .dark-mode .start-50{
+      background-color: white;
+      color: black;
+    }
+
+    .text-dark-emphasis {
+      overflow: hidden;
+    
+  }
+  
+  .thstart-50{
+    text-decoration: none;
+    color: rgb(10, 26, 202);
+    font-family: Georgia, serif;
+    position: relative;
+    left: 20%;
+  }
+  .text-success{
+    text-decoration: none;
+    position: relative;
+    left: 20%;
+  }
+  
+  
+  /* my name color */
+  .th{
+    color: rgb(60, 5, 224);
+  }
+  
+  .th2.dark-mode{
+    background-color: white;
+    color: black;
+  }
+  
+  
+  
+  /* all forms */
+  .form{
+      background-image: url("/static/smooke.jpg");
+     
+    
+      background-size: cover;
+      background-size: 60%;
+    background-position: center;
+      width:300px;
+      height:500px;
+      position: relative;
+      left: -10%; 
+    right:-50%;
+    /* bottom: 3%; */
+    top: 30%;
+      /* top:-20px;
+      left:80px; */
+      border-radius: 10px; 
+         padding: 35px;
+    
+    }
+    .center{
+      background-position: center;
+      width:350px;
+      height:500px;
+      position: absolute;
+    
+    top: 70%;
+    left: 18%;
+      /* top:-20px;
+      left:80px; */
+      border-radius: 10px; 
+      
+    }
+  
+  
+    .form h2{
+      border: #b88111;
+      width: 200px;
+      font-family: georgia,serif;
+      text-align: center;
+      color:hsl(0, 0%, 99%);
+      font-size: 22px;
+      background-color: #060606;
+      border-radius: 12px;
+    
+      margin: 20px;
+      padding: 10px;
+    
+     
+    }
+  
+  
+  
+    .form input{
+      
+      width:220px;
+      height: 50px;
+      background: transparent;
+      border-bottom: 1px solid #ff7200;
+      border-top: none;
+      border-right: none;
+      border-left: none;
+      color:white ;
+      font-size: 15px;
+      letter-spacing: 1px;
+      margin-top: 30px;
+      background: transparent;
+      font-family: sans-serif;
+    }
+    .form input:focus{
+      background: transparent;
+      outline: none ;
+    } 
+    
+    .form input:focus{
+      outline: none;
+    } 
+  
+  
+    ::placeholder{
+      background: transparent;
+      color:hsl(0, 9%, 98%);
+      font-family: arial;
+    } 
+   
+  
+    .btn-outline-info{
+      width: 240px;
+      height: 50px;
+      margin-top: 45px;
+      font-size: 18px;
+      position: absolute;
+      bottom:20%;
+      right: 3%;   
+      }
+      
+  
+  
+  
+     
+      body{
+      
+        /* background-position: cover; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: -webkit-flex;
+        -webkit-align-items: center;
+        -webkit-justify-content: center;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+      
+      }
+      
+     
+   
+  
+  
+  
+  
+  /* bottom memu */
+  .menu{
+    position: relative;
+    left: -0%;
+    top: 70%;
+  
+    font-size: 30px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    transition:0.2s ease-in-out
+  }
+  ul li a:hover{
+    transition:0.2s ease-in-out;
+    color: #00ff3c;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+      
+
+   

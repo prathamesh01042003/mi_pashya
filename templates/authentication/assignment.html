@@ -1,0 +1,81 @@
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="/static/uploadjournel.css">
+    </head>
+    <body>
+    
+    
+        <div class="container">
+            <div class="text">
+    <h6>Upload <h2>ASSIGNMENT </h2>3<sup>rd</sup><br> Year I<sup>st</sup>SEM</h6>
+            </div>
+            <form action="{% url 'fileapp:upassignmentS' %}" method="POST" enctype="multipart/form-data">
+               <div class="form-row">
+                  <div class="input-data">
+                     <input type="text"name="fullnamey" required>
+                     <div class="underline"></div>
+                     <label for="">Full Name</label>
+                  </div>
+    
+    
+                  <div class="input-data">
+                     <input type="text" name="filename"required>
+                     <div class="underline"></div>
+                     <label for="">File Name like 1st chap of os</label>
+                  </div>
+               </div>
+    
+    
+               <div class="form-row">
+                  <div class="input-data" >
+                     <input type="text" name="status1" required>
+                     <div class="underline"></div>
+                     <label for="">Status ur staff,student or admin</label>
+                  </div>
+    
+                  <div class="input-data">
+                     <input type="file"   name="uploadfiles" required> 
+                     <div class="underline"></div>
+                     <label for=""></label>
+                  </div>
+               </div>
+ 
+    
+               <div class="form-row">
+                
+                  <div class="input-data textarea">
+                    
+                     <textarea rows="8" cols="80" required  input type="text" name="filedesc"></textarea>
+                     <br />
+                    
+                      <div class="underline">
+                      
+                     </div>
+                   
+                     <label for=""input type="text" name="filedesc">Write your message</label>
+                     <br />
+    
+    
+                     <div class="form-row submit-btn">
+                        <div class="input-data">
+                          
+                           <div class="inner"></div>
+    
+                           {% csrf_token %}
+                           <input type="submit" value="submit">
+                        </div>
+                     </div>
+            </form>
+         </div>
+        
+    </body>
+    </html>
+     
+
+
+
+

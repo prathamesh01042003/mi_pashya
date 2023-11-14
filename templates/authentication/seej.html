@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<style>
+  table, th, td {
+    border: 4px outset white;
+    border-collapse: collapse;
+  }
+  th, td {
+    background-color: #96D4D4;
+  }
+</style>
+<body class="bg-dark">
+
+  <h2 class="text-info">HERE IS THIRD YEAR 1<sup>st</sup> JOURNAL</h2>
+
+<table style="width:50% ,">
+  <tr >
+                
+    <th >S/N</th>
+    <th>status</th>
+    <th>Upload date</th>
+    <th>First Name</th>
+    <th>See file</th>
+    <th>file desc</th>
+    <th>file name</th>
+    <th>download it</th>
+  
+
+  
+  </tr>
+
+ 
+  {% for J in data3 %}
+           
+
+             <tr>
+                
+              <th>{{forloop.counter}}</th>
+
+
+              <th>{{J.status}}</th>
+
+               <th>{{J.date_field}}</th>
+ 
+             <th>{{J.full_name}}</th>
+
+
+      <th><a href="{{J.myfiles.url}}">{{J.myfiles}}</a></th>
+              
+      <th>{{J.file_desc}}</th>
+
+      <th>{{J.file_name}}</th>
+            
+            
+      <th><a Download href="{{J.myfiles.url}}">DOWNLOAD</a></th> 
+     
+               
+              </tr>
+             
+             
+             {%endfor%}
+</table>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+</html> 
+
+
+
+
+
+
+
+
+
+
+{% comment %} 
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/cards.css">
+  <title>Document</title>
+</head>
+<body>
+
+
+  <section class="articles">
+    
+    <article>
+      {% for f in data2 %}
+
+      <date class="date">{{f.date_field}}</date>
+      <br><br><br></br>
+
+      <date class="status">sends by:-{{f.status}}</date>
+      <div class="article-wrapper_image">
+        <figure>
+          <img src="{{f.myfiles}}" alt="" />
+        </figure>
+        <div class="article-body">
+          <h2>{{f.file_name}}</h2>
+          <p>
+            {{f.file_desc}}
+          </p>
+          <a href="{{f.myfiles.url}}" class="read-more">
+            Read more <span class="sr-only">about this is some title</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </article>
+    <article>
+      {%endfor%}
+     
+      <div class="article-wrapper">
+        <figure>
+          <img src="https://picsum.photos/id/103/800/450" alt="" />
+        </figure>
+        <div class="article-body">
+          <h2>This is some title</h2>
+          <p>
+            Curabitur convallis ac quam vitae laoreet. Nulla mauris ante, euismod sed lacus sit amet, congue bibendum eros. Etiam mattis lobortis porta. Vestibulum ultrices iaculis enim imperdiet egestas.
+          </p>
+          <a href="#" class="read-more">
+            Read more <span class="sr-only">about this is some title</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon" viewBox="0 0 20 20" fill="currentColor">
+              <path fill-rule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </article>
+  </section>
+  
+</body>
+</html> {% endcomment %}
